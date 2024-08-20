@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskMaster - Your Ultimate To-Do List Web App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>TaskMaster</h1>
+    </header>
+    <main>
+        <section id="task-form">
+            <h2>Create a New Task</h2>
+            <form>
+                <input type="text" id="task-input" placeholder="Enter task description">
+                <input type="date" id="due-date-input">
+                <select id="priority-input">
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                </select>
+                <select id="team-member-input">
+                    <option value="">Select a team member</option>
+                    <option value="John">John</option>
+                    <option value="Jane">Jane</option>
+                    <!-- Add more team members as needed -->
+                </select>
+                <button type="submit">Add Task</button>
+            </form>
+        </section>
+        <section id="task-list">
+            <h2>Your Tasks</h2>
+            <input type="text" id="search-input" placeholder="Search tasks">
+            <ul id="tasks"></ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 TaskMaster. All rights reserved.</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
